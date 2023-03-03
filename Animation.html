@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title> Animation </title>
+    <style>
+        .square {
+          height: 50%;
+          width: 30%;
+          background-color:purple;
+          position: absolute;
+          top: 25%;
+          left: 30%;
+          transform: rotate(20deg);
+          animation: color;
+          animation-duration: 5s;
+        }
+
+       
+@keyframes color {
+  50% {transform: rotate(360deg);}
+
+  from{ background-color: purple;}
+  to{ background-color: yellow;}
+    
+  from{ scale: 1;}
+  to{ scale: 0;}
+
+}
+
+        </style>
+</head>
+<body>
+    <div class="square">
+
+    </div>
+    
+</body>
+</html>
